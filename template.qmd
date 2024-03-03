@@ -207,7 +207,7 @@ punkte4 = 10
 cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
 ```
 
-**Von 20 Punkten wurden erreicht**: `r punkte4`
+**Von 10 Punkten wurden erreicht**: `r punkte4`
 
 {{< pagebreak >}}
 
