@@ -56,12 +56,7 @@ bewertungsplot = function(x) {
 
 ## Zusammenfassende Beurteilung (Details siehe nachfolgende Punkte 1-4)
 
-```{r}
-#| eval: true
-#| output: asis
-cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
-```
-
+{{< lipsum 1-1 >}}
 
 
 ```{r}
@@ -122,11 +117,8 @@ punkte1 = 16
 ```
 
 #### Anmerkungen
-```{r}
-#| eval: true
-#| output: asis
-cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
-```
+
+{{< lipsum 2-2 >}}
 
 **Von 20 Punkten wurden erreicht**: `r punkte1`
 
@@ -140,7 +132,7 @@ tribble(
   ~Kriterium, ~Bewertung,
   "sachgerechte Begriffsabgrenzung und stringente Anwendung in der Themenbearbeitung; korrekte Verwendung der Fachterminologie", 3,
   "angemessene Auswahl und Darstellung geeigneter theoretischer Ansätze", 4,
-  "Entwicklung eigenständiger Ansätze bzw. Ideen mit Problemlösungspotential", 4,
+  "Entwicklung eigenständiger Ansätze bzw. Ideen mit Problemlösungspotential (M)", 4,
   "Auswahl und Begründung einer der Forschungsfrage angemessenen Untersuchungsmethodik; Dokumentation des Vorgehens", 2,
   "angemessene Durchführung der Analyse", 3,
   "angemessene und zutreffende Darstellung der eigenen Untersuchungsergebnisse", 4,
@@ -151,11 +143,8 @@ punkte2 = 36
 ```
 
 #### Anmerkungen
-```{r}
-#| eval: true
-#| output: asis
-cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
-```
+
+{{< lipsum 3-3 >}}
 
 **Von 50 Punkten wurden erreicht**: `r punkte2`
 
@@ -176,11 +165,9 @@ punkte3 = 18
 ```
 
 #### Anmerkungen
-```{r}
-#| eval: true
-#| output: asis
-cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
-```
+
+{{< lipsum 4-4 >}}
+
 
 **Von 20 Punkten wurden erreicht**: `r punkte3`
 
@@ -192,8 +179,8 @@ cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
 #| fig-height: 1.6
 tribble(
   ~Kriterium, ~Bewertung,
-  "korrekte äußere Form (z.B. Deckblatt, Selbständigkeitserklärung, Layout)", 5,
-  "formal korrekte Verzeichnisse", 5,
+  "korrekte äußere Form (z.B. Deckblatt, Erklärungen, Layout)", 5,
+  "formal korrekte Verzeichnisse (v.a. Literatur)", 5,
   "korrekte Anwendung der Regeln der Rechtschreibung, Grammatik und Interpunktion; angemessener sprachlicher Stil; Silbentrennung", 5
 ) %>% 
   bewertungsplot()
@@ -201,11 +188,9 @@ punkte4 = 10
 ```
 
 #### Anmerkungen
-```{r}
-#| eval: true
-#| output: asis
-cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
-```
+
+{{< lipsum 5-5 >}}
+
 
 **Von 10 Punkten wurden erreicht**: `r punkte4`
 
@@ -213,34 +198,28 @@ cat(stringi::stri_rand_lipsum(n_paragraphs = 1))
 
 ## Erläuterung und Einordnung
 
-\begin{footnotesize}
-\begin{singlespace}
+<!-- \begin{footnotesize} -->
+<!-- \begin{singlespace} -->
 Diese Vorlage verwenden wir an der Arbeitsstelle Digitale Forschungsmethoden zur Beurteilung wissenschaftlicher Arbeiten im Rahmen des Studiums am Institut für Publizistik- und Kommunikationswissenschaft der Freien Universität Berlin. Die Arbeiten sollen zeigen, dass die Studierenden in der Lage sind, innerhalb einer vorgegebenen Frist eine wissenschaftliche Frage selbständig zu bearbeiten. Dazu sollen die aktuellen wissenschaftlichen Erkenntnisse herangezogen und ggf. eigene empirische Untersuchungen angestellt werden. Die Arbeiten werden anhand einer grundsätzlich identischen Logik bewertet. Allerdings ist das anzulegende Bewertungsniveau dem theoretischen und praktischen Wissens- und Erkenntnisstand des jeweiligen Studiengangs sowie der Bearbeitungszeit anzupassen.
 
-Über die vier Bewertungsschwerpunkte hinweg können in Summe maximal 100 Punkte erreicht werden. Die Angaben zu den einzelnen Kriterien innerhalb der Bewertungsschwerpunkte sind qualitative Einordnungen. Sie haben \emph{keine direkte} Entsprechung in der Vergabe der Punkte, da sie je nach Arbeit unterschiedlich gewichtet werden. \emph{Extreme} Mängel in einem der vier Bewertungsschwerpunkte führen in der Regel zu einer Bewertung der gesamten Arbeit mit \emph{nicht ausreichend}.
+Über die vier Bewertungsschwerpunkte hinweg können insgesamt 100 Punkte erreicht werden. Die Angaben zu den einzelnen Kriterien innerhalb der Bewertungsschwerpunkte sind qualitative Einordnungen. Sie haben \emph{keine direkte} Entsprechung in der Vergabe der Punkte, da sie je nach Arbeit unterschiedlich gewichtet werden. \emph{Extreme} Mängel in einem der vier Bewertungsschwerpunkte führen in der Regel zu einer Bewertung der gesamten Arbeit mit \emph{nicht ausreichend}.
 
-Es können insgesamt 100 Punkte erreicht werden. Die erreichten Punkte werden wie folgt in eine Note umgerechnet:
+Die erreichten Punkte werden wie folgt in eine Note umgerechnet:
 
-100-95: 1.0 (sehr gut -- eine hervorragende Leistung)
+| Punkte | Note | Erläuterung |
+|---|--|-------------------------|
+| 100-95 | 1.0 | sehr gut -- eine hervorragende Leistung |
+| 94-90 | 1.3 | |
+| 89-85 | 1.7 | |
+| 84-80 | 2.0 | gut -- eine erheblich über dem Durchschnitt liegende Leistung |
+| 79-75 | 2.3 | |
+| 74-70 | 2.7 | |
+| 69-65 | 3.0 | befriedigend -- eine Leistung, die in jeder Hinsicht durchschnittlichen Anforderungen entspricht |
+| 64-60 | 3.3 | |
+| 59-55 | 3.7 | |
+| 54-50 | 4.0 | ausreichend -- eine Leistung, die trotz ihrer Mängel den Anforderungen noch entspricht |
+| 49-0 | 5.0 | nicht ausreichend -- eine Leistung mit erheblichen Mängeln, die den Anforderungen nicht entspricht. |
 
-94-90: 1.3
 
-89-85: 1.7
-
-84-80: 2.0 (gut -- eine erheblich über dem Durchschnitt liegende Leistung)
-
-79-75: 2.3
-
-74-70: 2.7
-
-69-65: 3.0 (befriedigend -- eine Leistung, die in jeder Hinsicht durchschnittlichen Anforderungen entspricht)
-
-64-60: 3.3
-
-59-55: 3.7 
-
-54-50: 4.0 (ausreichend -- eine Leistung, die trotz ihrer Mängel den Anforderungen noch entspricht)
-
-49-0: 5.0 (nicht ausreichend -- eine Leistung mit erheblichen Mängeln, die den Anforderungen nicht entspricht.)
-\end{singlespace}
-\end{footnotesize}
+<!-- \end{singlespace} -->
+<!-- \end{footnotesize} -->
