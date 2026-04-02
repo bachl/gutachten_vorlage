@@ -8,6 +8,7 @@ format:
   pdf:
     fontsize: 11pt
     papersize: a4
+    csquotes: true
     include-in-header:
       - text: |
           \usepackage{setspace}
@@ -23,7 +24,7 @@ params:
   autorin: "Sebastian Meisinger"
   art_gut: "Erstgutachten"
   art_arbeit: "Bachelorarbeit"
-  stud_gang: "B.A. Publizistik- und Kommunikationswissenschaft"
+  stud_gang: "Publizistik- und Kommunikationswissenschaft"
 ---
 
 ```{r setup}
