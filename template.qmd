@@ -142,8 +142,7 @@ punkte2 = 42
 
 #### Anmerkungen
 
-- Sehr aufwändiges und gut dokumentiertes Vorgehen zur Erfassung und Erstellung der Stimuli mittels einer qualitativen Inhaltsanalyse. Dadurch sehr gute Balance zwischen interner Validität des Experimentaldesigns und externer Validität durch Verwendung realer Social-Media-Botschaften als Stimuli.
-
+{{< lipsum 3-3 >}}
 
 **Von 50 Punkten wurden erreicht**: `r punkte2`
 
