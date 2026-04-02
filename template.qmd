@@ -16,9 +16,6 @@ execute:
   echo: false
   warning: false
   message: false
-filters:
-  - pandoc-quotes.lua
-quot-lang: de-DE
 params:
   titel: "Gangsta-Rap in Deutschland"
   autorin: "Sebastian Meisinger"
@@ -140,12 +137,13 @@ tribble(
   "kritische Reflexion der eigenen Ergebnisse und Ausblick auf weitere Forschung", 1
 ) %>% 
   bewertungsplot()
-punkte2 = 36
+punkte2 = 42
 ```
 
 #### Anmerkungen
 
-{{< lipsum 3-3 >}}
+- Sehr aufwändiges und gut dokumentiertes Vorgehen zur Erfassung und Erstellung der Stimuli mittels einer qualitativen Inhaltsanalyse. Dadurch sehr gute Balance zwischen interner Validität des Experimentaldesigns und externer Validität durch Verwendung realer Social-Media-Botschaften als Stimuli.
+
 
 **Von 50 Punkten wurden erreicht**: `r punkte2`
 
