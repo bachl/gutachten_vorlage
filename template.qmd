@@ -155,11 +155,11 @@ punkte2 = 42
 tribble(
   ~Kriterium, ~Bewertung,
   "Berücksichtigung relevanter und aktueller Literatur", 4,
-  "ausreichender Umfang der verwendeten Quellen", 5,
+  "ausreichender Umfang der verwendeten Quellen", 4,
   "kritische Distanz bei der Quellenauswahl und Quellenauswertung", 3
 ) %>% 
   bewertungsplot()
-punkte3 = 18
+punkte3 = 16
 ```
 
 #### Anmerkungen
